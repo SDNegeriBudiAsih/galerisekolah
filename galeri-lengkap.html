@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Lengkap - SD Negeri Budi Asih</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ===== Tambahan gaya khusus halaman galeri lengkap ===== */
+    header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      color: white;
+    }
+    header h1 {
+      margin-bottom: 10px;
+    }
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    section h2 {
+      text-align: center;
+      color: var(--secondary);
+      margin-bottom: 10px;
+    }
+    section p {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .gallery img {
+      border: 3px solid #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: zoom-in;
+      transition: transform 0.2s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 18px;
+      background: linear-gradient(90deg, rgba(46, 139, 87, 0.1), rgba(76, 175, 80, 0.1));
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    /* ===== Lightbox Styles ===== */
+    #lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #lightbox img {
+      max-width: 90%;
+      max-height: 85%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+      animation: zoomIn 0.3s ease;
+    }
+    #closeBtn, #prevBtn, #nextBtn {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: white;
+      background: rgba(0,0,0,0.4);
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      padding: 6px 12px;
+      transition: 0.2s;
+      z-index: 10000;
+    }
+    #closeBtn {
+      top: 20px;
+      right: 30px;
+      font-size: 2rem;
+      transform: none;
+    }
+    #prevBtn { left: 40px; }
+    #nextBtn { right: 40px; }
+
+    #closeBtn:hover,
+    #prevBtn:hover,
+    #nextBtn:hover {
+      background: rgba(255,255,255,0.2);
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 600px) {
+      #prevBtn, #nextBtn {
+        font-size: 1.5rem;
+        padding: 4px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>Galeri Lengkap SD Negeri Budi Asih</h1>
+    <a href="index.html" class="btn" style="margin-top:10px;">⬅️ Kembali ke Beranda</a>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- 🎓 KEGIATAN SISWA -->
+    <section id="kegiatan-siswa">
+      <h2> Kegiatan Siswa</h2>
+      <p>Berbagai kegiatan siswa SD Negeri Budi Asih.</p>
+      <div class="gallery">
+        <img src="images/siswa1.jpg" >
+        <img src="images/siswa2.jpg" >
+        <img src="images/siswa3.jpg" >
+        <img src="images/siswa4.jpg" >
+        <img src="images/siswa5.jpg" >
+        <img src="images/siswa6.jpg" >
+        <img src="images/siswa7.jpg" >
+        <img src="images/siswa8.jpg" >
+        <img src="images/siswa9.jpg" >
+        <img src="images/siswa10.jpg" >
+        <img src="images/siswa11.jpg" >
+        <img src="images/siswa12.jpg" >
+        <img src="images/siswa13.jpg" >
+        <img src="images/siswa14.jpg" >
+        <img src="images/siswa15.jpg" >
+        <img src="images/siswa16.jpg" >
+        <img src="images/siswa17.jpg" >
+        <img src="images/siswa18.jpg" >
+        <img src="images/siswa19.jpg" >
+        <img src="images/siswa20.jpg" >
+        <img src="images/siswa21.jpg" >
+        <img src="images/siswa22.jpg" >
+        <img src="images/siswa23.jpg" >
+        <img src="images/siswa24.jpg" >
+        <img src="images/siswa25.jpg" >
+        <img src="images/siswa26.jpg" >
+        <img src="images/siswa27.jpg" >
+        <img src="images/siswa28.jpg" >
+        <img src="images/siswa29.jpg" >
+        <img src="images/siswa30.jpg" >
+        <img src="images/siswa31.jpg" >
+        <img src="images/siswa32.jpg" >
+        <img src="images/siswa33.jpg" >
+        <img src="images/siswa34.jpg" >
+        <img src="images/siswa35.jpg" >
+        <img src="images/siswa36.jpg" >
+        <img src="images/siswa37.jpg" >
+        <img src="images/siswa38.jpg" >
+        <img src="images/siswa39.jpg" >
+        <img src="images/siswa40.jpg" >
+        <img src="images/siswa41.jpg" >
+        <img src="images/siswa42.jpg" >
+        <img src="images/siswa43.jpg" >
+        <img src="images/siswa44.jpg" >
+        <img src="images/siswa45.jpg" >
+        <img src="images/siswa46.jpg" >
+        <img src="images/siswa47.jpg" >
+        <img src="images/siswa48.jpg" >
+        <img src="images/siswa49.jpg" >
+        <img src="images/siswa50.jpg" >
+        <img src="images/siswa51.jpg" >
+        <img src="images/siswa52.jpg" >
+        <img src="images/siswa53.jpg" >
+        <img src="images/siswa54.jpg" >
+        <img src="images/siswa55.jpg" >
+        <img src="images/siswa56.jpg" >
+        <img src="images/siswa57.jpg" >
+        <img src="images/siswa58.jpg" >
+        <img src="images/siswa59.jpg" >
+        <img src="images/siswa60.jpg" >
+        <img src="images/siswa61.jpg" >
+        <img src="images/siswa62.jpg" >
+        <img src="images/siswa63.jpg" >
+        <img src="images/siswa64.jpg" >
+        <img src="images/siswa65.jpg" >
+        <img src="images/siswa66.jpg" >
+        <img src="images/siswa67.jpg" >
+        <img src="images/siswa68.jpg" >
+        <img src="images/siswa69.jpg" >
+        <img src="images/siswa70.jpg" >
+        <img src="images/siswa71.jpg" >
+        <img src="images/siswa72.jpg" >
+        <img src="images/siswa73.jpg" >
+        <img src="images/siswa74.jpg" >
+        <img src="images/siswa75.jpg" >
+        <img src="images/siswa76.jpg" >
+        <img src="images/siswa77.jpg" >
+        <img src="images/siswa78.jpg" >
+        <img src="images/siswa79.jpg" >
+        <img src="images/siswa80.png" >
+        <img src="images/siswa81.jpg" >
+        <img src="images/siswa82.jpg" >
+        <img src="images/siswa83.jpg" >
+        <img src="images/siswa84.jpg" >
+        <img src="images/siswa85.jpg" >
+        <img src="images/siswa86.jpg" >
+        <img src="images/siswa87.jpg" >
+        <img src="images/siswa88.jpg" >
+        <img src="images/siswa89.jpg" >
+        <img src="images/siswa90.png" >
+        <img src="images/siswa91.jpg" >
+        <img src="images/siswa92.jpg" >
+        <img src="images/siswa93.jpg" >
+      </div>
+    </section>
+
+    <!--  KEGIATAN GURU & TENAGA KEPENDIDIKAN -->
+    <section id="kegiatan-guru">
+      <h2> Kegiatan Guru & Tenaga Kependidikan</h2>
+      <p>Dokumentasi kegiatan para guru dan staf sekolah.</p>
+      <div class="gallery">
+        <img src="images/guru1.jpg" >
+        <img src="images/guru2.jpg" >
+        <img src="images/guru3.jpg" >
+        <img src="images/guru4.jpg" >
+        <img src="images/guru5.jpg" >
+        <img src="images/guru6.jpg" >
+        <img src="images/guru7.jpg" >
+        <img src="images/guru8.jpg" >
+        <img src="images/guru9.jpg" >
+        <img src="images/guru10.jpg" >
+        <img src="images/guru11.jpg" >
+        <img src="images/guru12.jpg" >
+        <img src="images/guru13.jpg" >
+        <img src="images/guru14.jpg" >
+        <img src="images/guru15.jpg" >
+        <img src="images/guru16.jpg" >
+        <img src="images/guru17.jpg" >
+        <img src="images/guru18.jpg" >
+        <img src="images/guru19.jpg" >
+        <img src="images/guru20.jpg" >
+        <img src="images/guru21.jpg" >
+        <img src="images/guru22.jpg" >
+        <img src="images/guru23.jpg" >
+        <img src="images/guru24.jpg" >
+        <img src="images/guru25.jpg" >
+        <img src="images/guru26.jpg" >
+        <img src="images/guru27.jpg" >
+        <img src="images/guru28.jpg" >
+        <img src="images/guru29.jpg" >
+        <img src="images/guru30.jpg" >
+        <img src="images/guru31.jpg" >
+        <img src="images/guru32.jpg" >
+        <img src="images/guru33.jpg" >
+        <img src="images/guru34.jpg" >
+        <img src="images/guru35.jpg" >
+        <img src="images/guru36.jpg" >
+        <img src="images/guru37.jpg" >
+        <img src="images/guru38.jpg" >
+        <img src="images/guru39.jpg" >
+        <img src="images/guru40.jpg" >
+        <img src="images/guru41.jpg" >
+        <img src="images/guru42.jpg" >
+        <img src="images/guru43.jpg" >
+        <img src="images/guru44.jpg" >
+        <img src="images/guru45.jpg" >
+        <img src="images/guru46.jpg" >
+        <img src="images/guru47.jpg" >
+        <img src="images/guru48.jpg" >
+        <img src="images/guru49.jpg" >
+        <img src="images/guru50.jpg" >
+        <img src="images/guru51.jpg" >
+        <img src="images/guru52.jpg" >
+        <img src="images/guru53.jpg" >
+        <img src="images/guru54.jpg" >
+        <img src="images/guru55.jpg" >
+        <img src="images/guru56.jpg" >
+        <img src="images/guru57.jpg" >
+        <img src="images/guru58.jpg" >
+        <img src="images/guru59.jpg" >
+        <img src="images/guru60.jpg" >
+        <img src="images/guru61.jpg" >
+        <img src="images/guru62.jpg" >
+        <img src="images/guru63.jpg" >
+        <img src="images/guru64.jpg" >
+        <img src="images/guru65.jpg" >
+        <img src="images/guru66.jpg" >
+        <img src="images/guru67.jpg" >
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    &copy; <span id="year"></span> SD Negeri Budi Asih
+  </footer>
+
+  <!-- ===== LIGHTBOX OVERLAY ===== -->
+  <div id="lightbox">
+    <button id="closeBtn">✖</button>
+    <button id="prevBtn">⬅</button>
+    <img src="" alt="Tampilan besar">
+    <button id="nextBtn">➡</button>
+  </div>
+
+  <script>
+    // Tahun otomatis
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // === Fitur Lightbox + Navigasi ===
+    const galleryImages = document.querySelectorAll(".gallery img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = lightbox.querySelector("img");
+    const closeBtn = document.getElementById("closeBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    let currentIndex = 0;
+
+    // Buka gambar
+    galleryImages.forEach((img, index) => {
+      img.addEventListener("click", () => {
+        currentIndex = index;
+        showImage(currentIndex);
+      });
+    });
+
+    // Fungsi tampilkan gambar
+    function showImage(index) {
+      const total = galleryImages.length;
+      if (index < 0) index = total - 1;
+      if (index >= total) index = 0;
+      currentIndex = index;
+      lightboxImg.src = galleryImages[index].src;
+      lightboxImg.alt = galleryImages[index].alt;
+      lightbox.style.display = "flex";
+    }
+
+    // Tombol navigasi
+    nextBtn.addEventListener("click", () => showImage(currentIndex + 1));
+    prevBtn.addEventListener("click", () => showImage(currentIndex - 1));
+
+    // Tutup
+    closeBtn.addEventListener("click", () => lightbox.style.display = "none");
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox) lightbox.style.display = "none";
+    });
+
+    // Navigasi keyboard
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") lightbox.style.display = "none";
+      if (e.key === "ArrowRight") showImage(currentIndex + 1);
+      if (e.key === "ArrowLeft") showImage(currentIndex - 1);
+    });
+  </script>
+</body>
+</html>
